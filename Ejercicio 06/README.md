@@ -1,0 +1,1 @@
+# TASCA 6: Feu una taula amb els dies de la setmana (de dilluns a divendres) cada dia en una columna de la primera fila (emfatitzats, text més gran, negreta, cursiva, com vulgau), en la segona fila poseu alguna cosa representativa de cada dia (heu de posar com a mínim una foto, un enllaç a un video del youtube, un enllaç a alguna web, una llista no numerada amb 3 paraules...)
