@@ -1,0 +1,72 @@
+<!-- 3.- OnMouseOver(): Realitza una pàgina que mostre 5 quadrats de diferents
+colors. Quan el ratolí passe per damunt d’algun d’ells el color del fons de la
+pàgina canviarà a eixe color. -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercici 3</title>
+    <style media="screen">
+
+      div {
+        width: 300px;
+      }
+
+      .first {
+        background-color: red;
+      }
+
+      .second {
+        background-color: blue;
+      }
+
+      .third {
+        background-color: green;
+      }
+
+      .fourth {
+        background-color: yellow;
+      }
+
+    </style>
+    <script type="text/javascript">
+
+      function changeBackFirst(div) {
+        document.body.style.backgroundColor = "red";
+      }
+
+      function changeBackSecond(div) {
+        document.body.style.backgroundColor = "blue";
+      }
+
+      function changeBackThird(div) {
+        document.body.style.backgroundColor = "green";
+      }
+
+      function changeBackFourth(div) {
+        document.body.style.backgroundColor = "yellow";
+      }
+
+    </script>
+  </head>
+  <body>
+
+    <div class="first" onmouseover="changeBackFirst(this)">
+      stuff
+    </div>
+
+    <div class="second" onmouseover="changeBackSecond(this)">
+      stuff
+    </div>
+
+    <div class="third" onmouseover="changeBackThird(this)">
+      stuff
+    </div>
+
+    <div class="fourth" onmouseover="changeBackFourth(this)">
+      stuff
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!-- 4.- Conversor €-$ Realitzeu una pàgina que mostre un formulari per a la
+conversió d’Euros a Dolars. Els camps del formulari han de poder ser netejats. -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercici 4</title>
+    <script type="text/javascript">
+
+      function convertirEurosADollars() {
+
+        var euros = document.formu.convertir.value;
+        var EURO_TO_DOLLAR = 1.13;
+        var dollars = euros * EURO_TO_DOLLAR;
+        alert('Al cambio son ' + dollars + '$');
+
+      }
+      
+    </script>
+  </head>
+  <body>
+
+    <form action="" method="post" name="formu" id="formu"
+      onsubmit="return convertirEurosADollars()">
+
+   <label>Introduce la cantidad que desea convertir: <input type="text" name="convertir" value=""><br>
+
+    <input type="submit" value="Enviar">
+
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!-- 2.- Càlcul de nombres prims: Realitza una pàgina per calcular els nombres
+prims entre 1 i 100. -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercici 2</title>
+    <script type="text/javascript">
+
+      var cantidad = 100,j=2;
+
+      document.write('1 <br> 2 <br> 3 <br> 5 <br> 7 <br>')
+
+      function espar(x) {
+        return !(x & 1);
+      }
+
+      function esMultiplo(x , multiplo) {
+        return (x % multiplo) == 0;
+      }
+
+      for(var i = 11; i < cantidad; i+=2) {
+
+        if (esMultiplo(i , 3) || esMultiplo(i , 5) || esMultiplo(i , 7)) {
+          continue;
+        }
+        document.write(i)
+        document.write('<br>')
+      }
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
