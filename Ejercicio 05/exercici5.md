@@ -1,0 +1,9 @@
+# **PARA HACER UN HUEVO FRITO:**
+1. PRIMERO SE SACA UN HUEVO DE LA NEVERA (*MUCHO CUIDADO DE NO ROMPERLO*)
+2. DESPUÉS SE CALIENTA ACEITE EN LA SARTÉN (*MEJOR SI ES DE OLIVA*)
+3. SE CASCA EL [HUEVO](https://biotrendies.com/otros-alimentos/huevos) **DENTRO** DEL ACEITE (*CUIDADO QUE SALPICARÁ MUCHO*)
+4. SE DEJA CUAJAR Y SE SACA CON LA ESPUMADERA (***SIN ROMPERLO***).
+
+**¡QUÉ APROVECHE!**
+
+![paella](https://www.goya.com/media/3144/paella-marinera.jpg?quality=80)
