@@ -1,0 +1,233 @@
+@font-face {
+	font-family: 'poller_oneregular';
+	src: url('../fonts/pollerone/pollerone-webfont.eot');
+	src: url('../fonts/pollerone/pollerone-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/pollerone/pollerone-webfont.woff') format('woff'),
+		 url('../fonts/pollerone/pollerone-webfont.ttf') format('truetype'),
+		 url('../fonts/pollerone/pollerone-webfont.svg#poller_oneregular') format('svg');
+}
+@font-face {
+	font-family: 'leckerli_oneregular';
+	src: url('../fonts/leckerlione/leckerlione-regular-webfont.eot');
+	src: url('../fonts/leckerlione/leckerlione-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/leckerlione/leckerlione-regular-webfont.woff') format('woff'),
+		 url('../fonts/leckerlione/leckerlione-regular-webfont.ttf') format('truetype'),
+		 url('../fonts/leckerlione/leckerlione-regular-webfont.svg#leckerli_oneregular') format('svg');
+}
+
+body {
+	font-family: arial;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+#logo {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#logo img {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+header ul {
+	margin: 0;
+	list-style-type: none;
+	padding-top: 50px;
+}
+
+header ul li {
+	display: inline;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+header ul li a {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #252525;
+}
+
+header ul li a:hover {
+	color: #0ba39c;
+}
+
+.selected a {
+	color: #0ba39c;
+}
+
+#featured img {
+	float: left;
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+	position: relative;
+}
+
+#featured div h2 {
+	float: left;
+	background-color: white;
+	font-family: 'poller_oneregular';
+	position: absolute;
+	top: 320px;
+	left: 750px;
+	padding: 20px;
+	text-transform: uppercase;
+	font-size: 16pt;
+}
+
+#first {
+	float: left;
+	background-color: #252525;
+	color: white;;
+	position: absolute;
+	top: 430px;
+	left: 750px;
+	padding: 10px 20px;
+	font-size: 16pt;
+}
+
+#second {
+	background-color: #252525;
+	color: white;
+	position: absolute;
+	top: 500px;
+	left: 750px;
+	padding: 10px 20px;
+	font-size: 16pt;
+}
+
+#third {
+	float: left;
+	background-color: #252525;
+	color: white;
+	position: absolute;
+	top: 570px;
+	left: 750px;
+	padding: 10px 20px;
+	font-size: 16pt;
+}
+
+#featured a {
+	float: left;
+	background-color: #0ba39c;
+	color: white;
+	position: absolute;
+	text-transform: uppercase;
+	text-decoration: none;
+	top: 640px;
+	left: 750px;
+	padding: 20px 20px;
+	font-size: 16pt;
+}
+
+#body ul {
+	float: left;
+	width: 100%;
+}
+
+#body ul li {
+	float: left;
+  display: inline-block;
+  text-align: center;
+	list-style-type: none;
+	margin-left: 15px;
+}
+
+#body ul li a img {
+	float: left;
+	border: 2px solid #252525;
+}
+
+#body ul li a {
+	float: left;
+	text-decoration: none;
+}
+
+#body ul li a span {
+	color: black;
+	display: block;
+	font-family: 'poller_oneregular';
+	margin-top: 15px;
+	text-transform: uppercase;
+}
+
+footer {
+	background-color: #252525;
+	float: left;
+	width: 100%;
+}
+
+footer div ul {
+	float: right;
+	list-style-type: none;
+	text-align: center;
+	padding-right: 100px;
+	padding-top: 20px;
+}
+
+footer div ul li {
+	display: inline;
+}
+
+footer div ul li a {
+	display: inline-block;
+	padding: 60px 60px 0 0;
+	text-indent: -666em;
+}
+
+#twitter {
+	background: url(../images/icons/icon-twitter.jpg) no-repeat 0 0;
+}
+
+#twitter:hover {
+	background: url(../images/icons/icon-twitter-hover.jpg) no-repeat 0 0;
+}
+
+#facebook {
+	background: url(../images/icons/icon-facebook.jpg) no-repeat 0 0;
+}
+
+#facebook:hover {
+	background: url(../images/icons/icon-facebook-hover.jpg) no-repeat 0 0;
+}
+
+#googleplus {
+	background: url(../images/icons/icon-googleplus.jpg) no-repeat 0 0;
+}
+
+#googleplus:hover {
+	background: url(../images/icons/icon-googleplus-hover.jpg) no-repeat 0 0;
+}
+
+#pinterest {
+	background: url(../images/icons/icon-pinterest.jpg) no-repeat 0 0;
+}
+
+#pinterest:hover {
+	background: url(../images/icons/icon-pinterest-hover.jpg) no-repeat 0 0;
+}
+
+footer div p {
+	color: white;
+	text-align: center;
+	padding: 50px;
+	float: left;
+}
