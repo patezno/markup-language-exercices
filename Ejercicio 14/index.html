@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="es" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Exámen</title>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <a href="#"><img src="img/logo.jpg" alt=""></a>
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Calendario</a></li>
+          <li><a href="#">Departamentos</a></li>
+          <li><a href="#">Curs 18/19</a></li>
+          <li><a href="#">Aula virtual</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <section>
+
+      <article>
+
+        <h2>Instrucciones</h2>
+
+        <p>En los botones circulares solo se puede seleccionar una opción. Ejemplo:</p>
+        <ul>
+          <li><input type="radio" name="tutorial" value="falso">Falso</li>
+          <li><input type="radio" name="tutorial" value="correcto" checked>Correcto</li>
+          <li><input type="radio" name="tutorial" value="falso">Falso</li>
+        </ul>
+
+        <p>En los botones cuadrados con un tick se puede seleccionar y deseleccionar más de una opción. Ejemplo:</p>
+        <ul>
+          <li><input type="checkbox" name="tutorial" value="falso">Falso</li>
+          <li><input type="checkbox" name="tutorial" value="correcto" checked>Correcto</li>
+          <li><input type="checkbox" name="tutorial" value="falso">Falso</li>
+          <li><input type="checkbox" name="tutorial" value="correcto" checked>Correcto</li>
+        </ul>
+
+        <p>En los cuadros de texto puedes escribir lo que quieras, ten cuidado. Solo se piden números.</p>
+
+      </article>
+
+    </section>
+
+    <section>
+
+        <form action="index.html" method="post">
+
+          <h2>Exámen Tema 4</h2>
+
+          <h3>Pregunta 1</h3>
+          <p>¿Cuál es la cifra de las unidades de millar en el número 19.637?</p>
+          <ul>
+            <li><input type="radio" name="cifra" value="1">1</li>
+            <li><input type="radio" name="cifra" value="9">9</li>
+            <li><input type="radio" name="cifra" value="6">6</li>
+          </ul>
+
+          <h3>Pregunta 2</h3>
+          <p>¿Cúal es la descomposición del número 30.009 en forma de suma?</p>
+          <ul>
+            <li><input type="radio" name="descomposición" value="3000 + 9">3.000 + 9</li>
+            <li><input type="radio" name="descomposición" value="300 + 90">3.00 + 90</li>
+            <li><input type="radio" name="descomposición" value="30000 + 9">30.000 + 9</li>
+          </ul>
+
+          <h3>Pregunta 3</h3>
+          <p>Realiza este problema</p>
+          <p class="problema">El libro de Alfredo tiene 170 páginas y el de Anita, 215 páginas.<br>
+          ¿Cuántas páginas tienen los dos?</p>
+          <input type="text" name="problema">
+
+          <h3>Pregunta 4</h3>
+          <p>Selecciona los números par</p>
+          <ul>
+            <li><input type="checkbox" name="par" value="1">1</li>
+            <li><input type="checkbox" name="par" value="3">3</li>
+            <li><input type="checkbox" name="par" value="4">4</li>
+            <li><input type="checkbox" name="par" value="6">6</li>
+            <li><input type="checkbox" name="par" value="10">10</li>
+            <li><input type="checkbox" name="par" value="15">15</li>
+            <li><input type="checkbox" name="par" value="20">20</li>
+            <li><input type="checkbox" name="par" value="22">22</li>
+          </ul>
+
+          <h3>Pregunta 5</h3>
+          <p>¿Cómo se escribe el número cincuenta y tres mil doce?</p>
+          <select name="numero">
+            <option>---------</option>
+            <option>53.012</option>
+            <option>53.112</option>
+            <option>50.012</option>
+          </select>
+
+          <h3>Pregunta 6</h3>
+          <p>La decena más próxima al número 287 es:</p>
+          <input type="text" list="decena" name="decena">
+          <datalist id="decena">
+            <option value="280">
+            <option value="300">
+            <option value="290">
+          </datalist>
+
+          <h3>Pregunta 7</h3>
+          <p>Realiza este problema</p>
+          <p class="problema">Perla tiene 59 gallinas. Si nacen en el corral 9 unidades y 2 decenas de pollitos.<br>
+          ¿Cuántas aves tiene en total?</p>
+          <input type="text" name="problema">
+
+          <h3>Pregunta 8</h3>
+          <p>Realiza este problema</p>
+          <p class="problema">El álbum de Ricky tiene 180 figuritas, pega 85 figuritas. <br>
+          ¿Cuántas figuritas le falta pegar?</p>
+          <input type="text" name="problema">
+
+          <h3>Pregunta 9</h3>
+          <p>El número posterior a 69.190 es:</p>
+          <ul>
+            <li><input type="radio" name="posterior" value="69189">69.189</li>
+            <li><input type="radio" name="posterior" value="69199">69.199</li>
+            <li><input type="radio" name="posterior" value="69191">69.191</li>
+          </ul>
+
+          <h3>Pregunta 10</h3>
+          <p>¿A qué número corresponde la descomposición 5 DM, 8 UM, 7 C y 1 U?</p>
+          <ul>
+            <li><input type="radio" name="descomposición" value="58710">58.710</li>
+            <li><input type="radio" name="descomposición" value="58071">58.071</li>
+            <li><input type="radio" name="descomposición" value="58701">58.701</li>
+          </ul>
+
+          <p><input type="submit" value="Entregar"><input type="reset" value="Reiniciar"></p>
+
+        </form>
+
+    </section>
+
+  </body>
+
+</html>

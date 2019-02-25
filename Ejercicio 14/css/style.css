@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'google_sans';
+    src: url('../fonts/GoogleSans.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'google_sans';
+  margin: 0;
+  background-color: #333367;
+}
+
+header {
+  width: 100%;
+  float: left;
+  background-color: white;
+  box-shadow: 0px 5px 5px #0c0c0c;
+}
+
+header img {
+  width: 20%;
+  float: left;
+  padding: 1%;
+}
+
+header nav ul {
+  width: 700px;
+  float: right;
+  list-style-type: none;
+  position: relative;
+  top: 30px;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: #333367;
+  margin-right: 3%;
+  padding: 0.5%;
+}
+
+header nav ul li a:hover {
+  color: white;
+  background-color: #333367;
+  box-shadow: 2px 2px 2px #2b2e2f;
+  border-radius: 2px;
+}
+
+section {
+  float: left;
+  width: 50%;
+  background-color: white;
+  margin-top: 40px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 40px;
+  box-shadow: 5px 5px 5px #0c0c0c;
+  border-radius: 5px;
+}
+
+section form, section article {
+  margin-left: 15px;
+}
+
+section form h2, section article h2 {
+  color: #333367;
+  font-size: 20pt;
+}
+
+section form ul, section article ul {
+  list-style-type: none;
+}
+
+.problema {
+  font-style: italic;
+}
+
+select {
+  margin: 10px;
+}
+
+input[type=submit], input[type=reset] {
+	background-color: white;
+	color: #333367;
+  font-weight: bold;
+	padding: 20px;
+	border: 0px;
+  margin: 20px;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #333367;
+  color: white;
+  box-shadow: 2px 2px 2px #0c0c0c;
+  border-radius: 2px;
+}
+
+input[type=reset]:hover {
+  background-color: #333367;
+  color: white;
+  box-shadow: 2px 2px 2px #0c0c0c;
+  border-radius: 2px;
+}

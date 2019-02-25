@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE questions>
+
+<questions>
+
+  <question>
+    <type>radio</type>
+    <title>¿Cuál es la cifra de las unidades de millar en el número 19.637?</title>
+    <option>1</option>
+    <option>9</option>
+    <option>6</option>
+    <answer>9</answer>
+  </question>
+
+  <question>
+    <type>radio</type>
+    <title>¿Cúal es la descomposición del número 30.009 en forma de suma?</title>
+    <option>3.000 + 9</option>
+    <option>3.00 + 90</option>
+    <option>30.000 + 9</option>
+    <answer>30.000 + 9</answer>
+  </question>
+
+  <question>
+    <type>text</type>
+    <title>El libro de Alfredo tiene 170 páginas y el de Anita, 215 páginas.<br>
+    ¿Cuántas páginas tienen los dos?</title>
+    <answer>385</answer>
+  </question>
+
+  <question>
+    <type>checkbox</type>
+    <title>Selecciona los números par</title>
+    <option>1</option>
+    <option>3</option>
+    <option>4</option>
+    <option>6</option>
+    <option>10</option>
+    <option>15</option>
+    <option>20</option>
+    <option>22</option>
+    <answer>4</answer>
+    <answer>6</answer>
+    <answer>10</answer>
+    <answer>20</answer>
+    <answer>22</answer>
+  </question>
+
+</questions>
