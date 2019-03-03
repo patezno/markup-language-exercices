@@ -4,7 +4,7 @@
 
 <questions>
 
-  <question>
+  <question id="pregunta_01">
     <type>radio</type>
     <title>¿Cuál es la cifra de las unidades de millar en el número 19.637?</title>
     <option>1</option>
@@ -13,7 +13,7 @@
     <answer>9</answer>
   </question>
 
-  <question>
+  <question id="pregunta_02">
     <type>radio</type>
     <title>¿Cúal es la descomposición del número 30.009 en forma de suma?</title>
     <option>3.000 + 9</option>
@@ -22,14 +22,14 @@
     <answer>30.000 + 9</answer>
   </question>
 
-  <question>
+  <question id="pregunta_03">
     <type>text</type>
     <title>El libro de Alfredo tiene 170 páginas y el de Anita, 215 páginas.<br>
     ¿Cuántas páginas tienen los dos?</title>
     <answer>385</answer>
   </question>
 
-  <question>
+  <question id="pregunta_04">
     <type>checkbox</type>
     <title>Selecciona los números par</title>
     <option>1</option>
@@ -45,6 +45,56 @@
     <answer>10</answer>
     <answer>20</answer>
     <answer>22</answer>
+  </question>
+
+  <question id="pregunta_05">
+    <type>select</type>
+    <title>¿Cómo se escribe el número cincuenta y tres mil doce?</title>
+    <option>53.012</option>
+    <option>53.112</option>
+    <option>50.012</option>
+    <answer>53.012</answer>
+  </question>
+
+  <question id="pregunta_06">
+    <type>datalist</type>
+    <title>La decena más próxima al número 287 es:</title>
+    <option>280</option>
+    <option>300</option>
+    <option>290</option>
+    <answer>290</answer>
+  </question>
+
+  <question id="pregunta_07">
+    <type>text</type>
+    <title>Perla tiene 59 gallinas. Si nacen en el corral 9 unidades y 2 decenas de pollitos.
+    ¿Cuántas aves tiene en total?</title>
+    <answer>88</answer>
+  </question>
+
+  <question id="pregunta_08">
+    <type>text</type>
+    <title>El álbum de Ricky tiene 180 figuritas, pega 85 figuritas.
+    ¿Cuántas figuritas le falta pegar?</title>
+    <answer>95</answer>
+  </question>
+
+  <question id="pregunta_09">
+    <type>radio</type>
+    <title>El número posterior a 69.190 es:</title>
+    <option>69.189</option>
+    <option>69.199</option>
+    <option>69.191</option>
+    <answer>69.191</answer>
+  </question>
+
+  <question id="pregunta_10">
+    <type>radio</type>
+    <title>¿A qué número corresponde la descomposición 5 DM, 8 UM, 7 C y 1 U?</title>
+    <option>58.710</option>
+    <option>58.071</option>
+    <option>58.701</option>
+    <answer>58.701</answer>
   </question>
 
 </questions>
