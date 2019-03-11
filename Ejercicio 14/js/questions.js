@@ -45,7 +45,7 @@ window.onload = function() {
 		}
 	}
 	;
-	xhttp.open("GET", "xml/preguntas.xml", true);
+	xhttp.open("POST", "xml/preguntas.xml", true);
 	xhttp.send();
 }
 
@@ -384,10 +384,10 @@ function ponerDatosInputHtml(t) {
 	document.getElementById("tituloInput").innerHTML = t;
 }
 function ponerDatosInput2Html(t) {
-	document.getElementById("tituloInput2").innerHTML = t;
+	document.getElementById("2").innerHTML = t;
 }
 function ponerDatosInput3Html(t) {
-	document.getElementById("tituloInput3").innerHTML = t;
+	document.getElementById("3").innerHTML = t;
 }
 function ponerDatosSelectHtml(t,opt) {
 	document.getElementById("tituloSelect").innerHTML=t;

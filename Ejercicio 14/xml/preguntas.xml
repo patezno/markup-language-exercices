@@ -24,7 +24,7 @@
 
   <question id="pregunta_03">
     <type>text</type>
-    <title>El libro de Alfredo tiene 170 páginas y el de Anita, 215 páginas.<br>
+    <title>El libro de Alfredo tiene 170 páginas y el de Anita, 215 páginas.
     ¿Cuántas páginas tienen los dos?</title>
     <answer>385</answer>
   </question>
