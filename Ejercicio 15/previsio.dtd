@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT temps (poblacio+)>
+<!ELEMENT poblacio (nom, comarca, data+)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT comarca (#PCDATA)>
+<!ELEMENT data (maxima, minima, vent, pluja?, previsio+)>
+<!ATTLIST data dia CDATA #REQUIRED>
+<!ELEMENT pluja (#PCDATA)>
+<!ELEMENT maxima (#PCDATA)>
+<!ELEMENT minima (#PCDATA)>
+<!ELEMENT vent (#PCDATA)>
+<!ELEMENT previsio (estat, graus)>
+<!ATTLIST previsio hora NMTOKEN #REQUIRED>
+<!ELEMENT estat (#PCDATA)>
+<!ELEMENT graus (#PCDATA)>

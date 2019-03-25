@@ -14,12 +14,12 @@
   </question>
 
   <question id="pregunta_02">
-    <type>radio</type>
-    <title>¿Cúal es la descomposición del número 30.009 en forma de suma?</title>
-    <option>3.000 + 9</option>
-    <option>3.00 + 90</option>
-    <option>30.000 + 9</option>
-    <answer>30.000 + 9</answer>
+    <type>select</type>
+    <title>¿Cómo se escribe el número cincuenta y tres mil doce?</title>
+    <option>53.012</option>
+    <option>53.112</option>
+    <option>50.012</option>
+    <answer>53.012</answer>
   </question>
 
   <question id="pregunta_03">
@@ -49,11 +49,11 @@
 
   <question id="pregunta_05">
     <type>select</type>
-    <title>¿Cómo se escribe el número cincuenta y tres mil doce?</title>
-    <option>53.012</option>
-    <option>53.112</option>
-    <option>50.012</option>
-    <answer>53.012</answer>
+    <title>¿Cúal es la descomposición del número 30.009 en forma de suma?</title>
+    <option>3.000 + 9</option>
+    <option>3.00 + 90</option>
+    <option>30.000 + 9</option>
+    <answer>30.000 + 9</answer>
   </question>
 
   <question id="pregunta_06">
