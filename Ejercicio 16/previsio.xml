@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<temps>
+<temps xmlns:xsi="http://wwww.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejercicio16.xsd">
     <poblacio>
         <nom>Figueres</nom>
         <comarca>Alt Empordà</comarca>

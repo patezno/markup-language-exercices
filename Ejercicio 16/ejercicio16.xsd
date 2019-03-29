@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://www.w3schools.com"
+  elementFormDefault="qualified">
+  <xs:element name="temps">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="poblacio" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nom" type="xs:string"/>
+              <xs:element name="comarca" type="xs:string"/>
+              <xs:element name="data" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="maxima" type="xs:string"/>
+                    <xs:element name="minima" type="xs:string"/>
+                    <xs:element name="vent" type="xs:string"/>
+                    <xs:element name="pluja" type="xs:string" minOccurs="0"/>
+                    <xs:element name="previsio" maxOccurs="3">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="estat" type="xs:string"/>
+                          <xs:element name="graus" type="xs:integer"/>
+                        </xs:sequence>
+                        <xs:attribute name="hora" type="xs:string" use="required"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="dia" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:schema>
