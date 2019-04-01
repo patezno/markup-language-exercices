@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personal SYSTEM "personal.dtd">
+<personal>
+
+  <persona id="0001" salary="30000">
+    <dades>
+      <nom>Jesucristo</nom>
+      <cognom>Superstar</cognom>
+    </dades>
+    <email>jesuscristo@empresa.com</email>
+    <url href="http://www.empresa.com/jesucristo"/>
+    <relacio treballador="0002 0003 0004"/>
+  </persona>
+
+  <persona id="0002" note="sub-employee">
+    <dades>
+      <nom>equisemele</nom>
+      <cognom>detede</cognom>
+    </dades>
+    <email>equisemele@empresa.com</email>
+    <url href="http://wwww.empresa.com/sub-employee/equisemele"/>
+    <relacio treballador="0001"/>
+  </persona>
+
+  <persona id="0003" salary="15000">
+    <dades>
+      <nom>Chris</nom>
+      <cognom>Redfield</cognom>
+    </dades>
+    <email>chris@empresa.com</email>
+    <url href="http://www.empresa.com/chris"/>
+    <relacio treballador="0001"/>
+  </persona>
+
+  <persona id="0004" note="sub-employee" salary="20000">
+    <dades>
+      <cognom>Kennedy</cognom>
+      <nom>Leon S.</nom>
+    </dades>
+    <email>leon@empresa.com</email>
+    <url href="http://www.empresa.com/sub-employee/leon"/>
+    <relacio treballador="0001"/>
+  </persona>
+</personal>
