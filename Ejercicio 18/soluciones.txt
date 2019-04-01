@@ -1,0 +1,34 @@
+--- Apartat 1 ---
+//ies/nombre
+
+--- Apartat 2 ---
+//web/text()
+
+--- Apartat 3 ---
+//ciclo/nombre/text()
+
+--- Apartat 4 ---
+//@id
+//ciclo/@*
+
+--- Apartat 5 ---
+//@año
+
+--- Apartat 6 ---
+1 paso: //ciclo[grado="Medio"]
+2 pasos: //grado[.="Medio"]/..
+
+--- Apartat 7 ---
+1 paso: //nombre[../grado="Superior"]
+2 pasos: //ciclo[grado="Superior"]/nombre
+         //grado[.="Superior"]/../nombre
+
+--- Apartat 8 ---
+1 paso: //nombre[../decretoTitulo/@año<2010]/text()
+2 pasos: //@año[.<2010]/../nombre/text()
+         //decretoTitulo[@año<2010]/../nombre/text()
+
+--- Apartat 9 ---
+1 paso: //nombre[../decretoTitulo/@año2008 or ../decretoTitulo/@año=2010]/text()
+2 pasos: (//@año[.=2008]|//@año[.=2010])/../../nombre/text()
+         //decretoTitulo[@año=2008 or @año=2010]/../nombre/text()
