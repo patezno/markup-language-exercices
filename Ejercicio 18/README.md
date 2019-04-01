@@ -35,8 +35,11 @@ Donat el següent document XML, escriu les expressions XPath que retornin la res
 http://www.iesabastos.org
 
 **Apartat 3:**
+
 Administración de Sistemas Informáticos en Red
+
 Desarrollo de Aplicaciones Web
+
 Sistemas Microinformáticos y Redes
 
 **Apartat 4:**
@@ -66,9 +69,13 @@ año="2008"
 <nombre>Desarrollo de Aplicaciones Web</nombre>
 ```
 **Apartat 8: Resol aquest exercici de 2 formes diferents, en un únic pas de cerca i amb 2 passos de cerca.**
+
 Administración de Sistemas Informáticos en Red
+
 Sistemas Microinformáticos y Redes
 
 **Apartat 9: Resol aquest exercici de 2 formes diferents, en un únic pas de cerca i amb 2 passos de cerca.**
+
 Desarrollo de Aplicaciones Web
+
 Sistemas Microinformáticos y Redes
