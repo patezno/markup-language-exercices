@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT personal (persona)+>
+<!ELEMENT persona (dades,email*,url*,relacio?)>
+<!ATTLIST persona id ID #REQUIRED>
+<!ATTLIST persona note CDATA #IMPLIED>
+<!ATTLIST persona contr (true|false) 'false'>
+<!ATTLIST persona salary CDATA #IMPLIED>
+<!ELEMENT dades ((cognom,nom)|(nom,cognom))>
+<!ELEMENT cognom (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT url EMPTY>
+<!ATTLIST url href CDATA 'http://'>
+<!ELEMENT relacio EMPTY>
+<!ATTLIST relacio director IDREF #IMPLIED>
+<!ATTLIST relacio treballador IDREFS #IMPLIED>
