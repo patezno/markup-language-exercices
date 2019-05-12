@@ -19,9 +19,9 @@ export class HomePage {
   }
 
   startMaps() {
+    this.mapsOpened = true;
     this.loadMap();
     this.getLocation();
-    this.mapsOpened = true;
   }
 
   async getLocation() {

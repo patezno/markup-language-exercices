@@ -1,3 +1,10 @@
 #map {
     height: 100%;
 }
+
+.getBackground {
+    --background: '';
+    background-image: url('../../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
