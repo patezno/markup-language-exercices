@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="dark">
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -10,5 +10,6 @@
 </ion-header>
 
 <ion-content>
+    <button class="button btn-dark" (click)="startMaps()" *ngIf="!mapsOpened">¡Necesito transporte!</button>
     <div #map id="map"></div>
 </ion-content>

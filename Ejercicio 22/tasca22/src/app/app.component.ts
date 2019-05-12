@@ -9,6 +9,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
+  isCollapsed: boolean;
+
   public appPages = [
     {
       title: 'Home',
@@ -23,6 +25,7 @@ export class AppComponent {
     private statusBar: StatusBar,
   ) {
     this.initializeApp();
+    this.isCollapsed = true;
   }
 
   initializeApp() {

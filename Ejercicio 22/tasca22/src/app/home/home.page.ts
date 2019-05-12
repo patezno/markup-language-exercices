@@ -12,14 +12,16 @@ export class HomePage {
 
   @ViewChild('map') mapElement: ElementRef;
   map: any;
-  address: string;
+  mapsOpened: boolean;
 
-  constructor(private geolocation: Geolocation) {}
+  constructor(private geolocation: Geolocation) {
+    this.mapsOpened = false;
+  }
 
-// tslint:disable-next-line: use-life-cycle-interface
-  ngOnInit() {
+  startMaps() {
     this.loadMap();
     this.getLocation();
+    this.mapsOpened = true;
   }
 
   async getLocation() {
@@ -30,17 +32,17 @@ export class HomePage {
     });
   }
 
-  async loadMap() {
+  loadMap() {
     this.map = new google.maps.Map(this.mapElement.nativeElement, this.getMapOptions());
   }
 
-  async setCenter(resp: Geoposition) {
+  setCenter(resp: Geoposition) {
     const latLng = new google.maps.LatLng(resp.coords.latitude, resp.coords.longitude);
     this.map.setCenter(latLng);
     this.putMarker(latLng);
   }
 
-  async putMarker(latLng: any) {
+  putMarker(latLng: any) {
     const marker = new google.maps.Marker({
       position: latLng,
       map: this.map,
@@ -48,7 +50,7 @@ export class HomePage {
     });
   }
 
-  async getMapOptions() {
+  getMapOptions() {
     const mapOptions = {
       zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
