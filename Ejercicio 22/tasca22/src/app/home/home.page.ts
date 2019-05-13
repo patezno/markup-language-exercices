@@ -13,9 +13,14 @@ export class HomePage {
   @ViewChild('map') mapElement: ElementRef;
   map: any;
   mapsOpened: boolean;
+  isMobile: boolean;
 
   constructor(private geolocation: Geolocation) {
     this.mapsOpened = false;
+  }
+
+  ngOnInit() {
+    window.onresize = () => this.isMobile = window.innerWidth <= 991;
   }
 
   startMaps() {

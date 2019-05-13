@@ -11,6 +11,10 @@ const routes: Routes = [
     path: 'home',
     loadChildren: './home/home.module#HomePageModule'
   },
+  {
+    path: 'conductores',
+    loadChildren: './conductores/conductores.module#ConductoresPageModule'
+  }
 ];
 
 @NgModule({

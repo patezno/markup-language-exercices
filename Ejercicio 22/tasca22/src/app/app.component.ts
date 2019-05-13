@@ -13,9 +13,24 @@ export class AppComponent {
 
   public appPages = [
     {
-      title: 'Home',
+      title: 'Inicio',
       url: '/home',
       icon: 'home'
+    },
+    {
+      title: 'Conductores',
+      url: '/conductores',
+      icon: 'car'
+    },
+    {
+      title: 'Registrarse',
+      url: '/sign-in',
+      icon: 'contact'
+    },
+    {
+      title: 'Iniciar Sesión',
+      url: '/log-in',
+      icon: 'log-in'
     }
   ];
 
