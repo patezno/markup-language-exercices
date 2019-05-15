@@ -9,10 +9,19 @@ export class ConductoresPage implements OnInit {
 
   isMobile: boolean;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     window.onresize = () => this.isMobile = window.innerWidth <= 991;
+    this.resize();
+  }
+
+  resize() {
+    if (window.innerWidth <= 991) {
+      this.isMobile = true;
+    } else {
+      this.isMobile = false;
+    }
   }
 
 }

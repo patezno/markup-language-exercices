@@ -15,12 +15,19 @@ export class HomePage {
   mapsOpened: boolean;
   isMobile: boolean;
 
-  constructor(private geolocation: Geolocation) {
-    this.mapsOpened = false;
-  }
+  constructor(private geolocation: Geolocation) {}
 
   ngOnInit() {
     window.onresize = () => this.isMobile = window.innerWidth <= 991;
+    this.resize();
+  }
+
+  resize() {
+    if (window.innerWidth <= 991) {
+      this.isMobile = true;
+    } else {
+      this.isMobile = false;
+    }
   }
 
   startMaps() {
