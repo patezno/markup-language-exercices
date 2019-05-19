@@ -3,7 +3,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
   name: 'noimage'
 })
-
 export class NoimagePipe implements PipeTransform {
 
   transform(images: any[]): string {
@@ -16,5 +15,4 @@ export class NoimagePipe implements PipeTransform {
       return 'assets/img/noimage.png';
     }
   }
-
 }

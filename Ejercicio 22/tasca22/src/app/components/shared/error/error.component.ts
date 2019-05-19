@@ -10,14 +10,15 @@ export class ErrorComponent implements OnInit {
 
   mensajeError: string;
 
-  constructor(private spotify: SpotifyService) {
-
-    this.spotify.getNewReleases().subscribe(data => console.log(data), error => {
-        this.mensajeError = error.error.error.message;
-      });
-  }
+  constructor(private spotify: SpotifyService) {}
 
   ngOnInit() {
+    this.getReleases();
   }
 
+  getReleases() {
+    this.spotify.getNewReleases().subscribe(data => console.log(data), error => {
+      this.mensajeError = error.error.error.message;
+    });
+  }
 }

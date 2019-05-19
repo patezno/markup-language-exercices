@@ -10,13 +10,11 @@ export class TarjetasComponent implements OnInit {
 
   @Input() items: any[] = [];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   verArtista(item: any) {
-
     let artistaId: any;
 
     if (item.type === 'artist') {
@@ -26,5 +24,4 @@ export class TarjetasComponent implements OnInit {
     }
     this.router.navigate(['/artist', artistaId]);
   }
-
 }

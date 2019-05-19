@@ -12,6 +12,5 @@ export class DomseguroPipe implements PipeTransform {
     const url = 'https://open.spotify.com/embed/track/';
     return this.domSanitazer.bypassSecurityTrustResourceUrl(url + value);
   }
-
 }
 

@@ -6,7 +6,6 @@ import { SpotifyService } from '../../services/spotify.service';
   templateUrl: './search.component.html',
   styles: []
 })
-
 export class SearchComponent {
 
   artistas: any[] = [];
@@ -16,7 +15,6 @@ export class SearchComponent {
   constructor(private spotify: SpotifyService) {}
 
   buscar(termino: string) {
-
     this.loading = true;
     this.error = false;
 
@@ -28,5 +26,4 @@ export class SearchComponent {
       this.error = true;
     });
   }
-
 }

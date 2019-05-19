@@ -12,6 +12,7 @@ export class ArtistComponent implements OnInit {
   artista: any = {};
   topTracks: any = [];
   loadingArtist: boolean;
+  isMobile: boolean;
 
   constructor(private router: ActivatedRoute, private spotify: SpotifyService) {
     this.router.params.subscribe(params => {
@@ -22,6 +23,16 @@ export class ArtistComponent implements OnInit {
   }
 
   ngOnInit() {
+    window.onresize = () => this.isMobile = window.innerWidth <= 690;
+    this.resize();
+  }
+
+  resize() {
+    if (window.innerWidth <= 690) {
+      this.isMobile = true;
+    } else {
+      this.isMobile = false;
+    }
   }
 
   getArtista(id: string) {
@@ -34,9 +45,7 @@ export class ArtistComponent implements OnInit {
 
   getTopTracks(id: string) {
     this.spotify.getTopTracks(id).subscribe(topTracks => {
-      console.log(topTracks);
       this.topTracks = topTracks;
     });
   }
-
 }
