@@ -1,37 +1,39 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouteReuseStrategy } from '@angular/router';
-
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { Geolocation } from '@ionic-native/geolocation/ngx';
-import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material';
-import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './components/home/home.component';
+import { SearchComponent } from './components/search/search.component';
+import { ArtistComponent } from './components/artist/artist.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { ROUTES } from './app.routes';
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { TarjetasComponent } from './components/shared/tarjetas/tarjetas.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { ErrorComponent } from './components/shared/error/error.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    SearchComponent,
+    ArtistComponent,
+    NavbarComponent,
+    NoimagePipe,
+    TarjetasComponent,
+    LoadingComponent,
+    DomseguroPipe,
+    ErrorComponent
+  ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(),
-    AppRoutingModule,
-    NgbModule.forRoot(),
-    BrowserAnimationsModule,
-    MatButtonModule
+    HttpClientModule,
+    RouterModule.forRoot(ROUTES, {useHash: true})
   ],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    Geolocation,
-    NativeGeocoder,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
