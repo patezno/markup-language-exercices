@@ -18,6 +18,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { ArtistMobileComponent } from './components/artist/artist-mobile/artist-mobile.component';
 import { ArtistPcComponent } from './components/artist/artist-pc/artist-pc.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ErrorComponent,
     ContactoComponent,
     ArtistMobileComponent,
-    ArtistPcComponent
+    ArtistPcComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
