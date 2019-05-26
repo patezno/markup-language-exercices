@@ -5,7 +5,6 @@ import { map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-
 export class SpotifyService {
 
   constructor(private http: HttpClient) {}
@@ -14,7 +13,7 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/${query}`;
 
     const headers = new HttpHeaders({
-      Authorization: 'Bearer  BQDZID0c3AmTM3KbRx5Mp_mT3umJuccd-iZH2rjV-6xyKz-EaTREEIoJtOuslfmWOgfi4sPrBm7lcYnmOEY'
+      Authorization: 'Bearer  BQCZH_gp40CdUxmCNO6Ess3wvggLaLNv20odR1pR3zjK8dQ_PlqIV6jb4IrxWNYiZrw86oh_n-cSK1ifimM'
     });
 
     return this.http.get(url, {headers});

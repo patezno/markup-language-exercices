@@ -1,0 +1,23 @@
+<div class="container animated fadeIn">
+    <div class="row">
+        <h3>Contacte con nosotros</h3>
+    </div>
+    <div class="row">
+        <div class="col-9">
+            <form [formGroup]="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" formControlName="email" placeholder="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" formControlName="mensaje" rows="7" required></textarea>
+                </div>
+            </form>
+            <div class="alert alert-success animated fadeIn m-5" *ngIf="isSended">
+                <p>Mensaje enviado</p>
+            </div>
+            <button class="button btn btn-block btn-primary col-4" (click)="send()" [disabled]="contactForm.invalid">Enviar</button>
+        </div>
+    </div>
+</div>

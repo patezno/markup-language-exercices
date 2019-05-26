@@ -14,6 +14,10 @@ import { TarjetasComponent } from './components/shared/tarjetas/tarjetas.compone
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { DomseguroPipe } from './pipes/domseguro.pipe';
 import { ErrorComponent } from './components/shared/error/error.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { ArtistMobileComponent } from './components/artist/artist-mobile/artist-mobile.component';
+import { ArtistPcComponent } from './components/artist/artist-pc/artist-pc.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,12 +30,17 @@ import { ErrorComponent } from './components/shared/error/error.component';
     TarjetasComponent,
     LoadingComponent,
     DomseguroPipe,
-    ErrorComponent
+    ErrorComponent,
+    ContactoComponent,
+    ArtistMobileComponent,
+    ArtistPcComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(ROUTES, {useHash: true})
+    RouterModule.forRoot(ROUTES, {useHash: true}),
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

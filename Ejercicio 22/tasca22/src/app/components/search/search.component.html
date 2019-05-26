@@ -1,13 +1,11 @@
-<div class="container">
-    <div class="row animated fadeIn">
-        <div class="col-10">
-            <input #termino type="text" (keyup)="buscar(termino.value)" class="form-control" placeholder="Buscar artista">
-        </div>
+<div class="row animated fadeIn">
+    <div class="col-10">
+        <input #termino type="text" (keyup)="search.buscar(termino.value)" class="form-control" placeholder="Buscar artista">
     </div>
 </div>
 
-<app-loading *ngIf="loading" class="m-5"></app-loading>
+<app-loading *ngIf="search.loading" class="m-5"></app-loading>
 
-<app-error *ngIf="error"></app-error>
+<app-error *ngIf="search.error"></app-error>
 
-<app-tarjetas *ngIf="!loading" [items]="artistas"></app-tarjetas>
+<app-tarjetas *ngIf="!search.loading" [items]="search.artistas"></app-tarjetas>
